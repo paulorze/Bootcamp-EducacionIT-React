@@ -1,0 +1,10 @@
+.educacionComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.educacionComponent__ul {
+    list-style: none;
+}
