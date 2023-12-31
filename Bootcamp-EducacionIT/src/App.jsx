@@ -1,9 +1,12 @@
-import MiCVComponent from './miCVComponent/MiCVComponent';
+import DateContextComponent from './context/DateContext';
+import FechaValidatorComponent from './fechaValidator/FechaValidatorComponent';
 
 function App() {
 
   return (
-    <MiCVComponent/>
+    <DateContextComponent>
+        <FechaValidatorComponent/>
+    </DateContextComponent>
   );
 };
 
