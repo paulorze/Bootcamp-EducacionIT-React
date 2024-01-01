@@ -1,12 +1,18 @@
-import DateContextComponent from './context/DateContext';
-import FechaValidatorComponent from './fechaValidator/FechaValidatorComponent';
+import { BrowserRouter } from 'react-router-dom'
+import AppRouter from './pages/router/AppRouter';
+import { Provider } from 'react-redux';
+import Store from './redux/store';
 
 function App() {
 
   return (
-    <DateContextComponent>
-        <FechaValidatorComponent/>
-    </DateContextComponent>
+    <Provider
+      store={Store}
+    >
+      <BrowserRouter>
+        <AppRouter/>
+      </BrowserRouter>
+    </Provider>
   );
 };
 
